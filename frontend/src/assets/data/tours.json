@@ -1,0 +1,74 @@
+[
+  {
+    "title": "India Gate",
+    "city": "New Delhi",
+    "address": "New Delhi",
+    "distance": 300,
+    "price": 500,
+    "desc": "India Gate, situated in the heart of New Delhi, India, is a majestic war memorial honoring soldiers who sacrificed their lives in World War I. The iconic arch-shaped structure stands as a symbol of national pride and remembrance, surrounded by lush lawns and serving as a popular gathering place for locals and tourists alike.",
+    "reviews": [],
+
+    "photo": "/tour-images/tour-img04.jpg",
+    "featured": true
+  },
+  {
+    "title": "Lotus Temple",
+    "city": "New Delhi",
+    "address": "New Delhi",
+    "distance": 34,
+    "price": 500,
+    "desc": "The Lotus Temple, located in Delhi, India, is a breathtaking architectural marvel renowned for its distinctive lotus flower-inspired design and serves as a Bahá'í House of Worship, welcoming people of all faiths to meditate and pray in a serene environment.",
+    "reviews": [],
+
+    "photo": "/tour-images/tour-img02.jpg",
+    "featured": true
+  },
+  {
+    "title": "Bandipur",
+    "city": "Pokhara",
+    "address": "Bandipur, Nepal",
+    "distance": 1050,
+    "price": 11000,
+    "desc": "Bandipur, a Newari gem in Nepal's hills, showcases preserved architecture and Himalayan vistas. Its cobblestone streets echo with Nepal's rich cultural heritage. A serene haven, Bandipur seamlessly marries history, tradition, and natural splendor.",
+    "reviews": [],
+
+    "photo": "/tour-images/tour-img01.jpg",
+    "featured": true
+  },
+  {
+    "title": "Swayambhunath",
+    "city": "Kathmandu",
+    "address": "Kathmandu, Nepal",
+    "distance": 1201,
+    "price": 10000,
+    "desc": "Swayambhunath: Also known as the Monkey Temple, Swayambhunath is an ancient Buddhist stupa perched atop a hill in Kathmandu Valley, Nepal. Adorned with colorful prayer flags and inhabited by monkeys, it offers panoramic views of the city and is revered as a symbol of harmony and enlightenment.",
+    "reviews": [],
+
+    "photo": "/tour-images/tour-img03.jpg",
+    "featured": true
+  },
+  {
+    "title": "Rishikesh",
+    "city": "Rishikesh",
+    "address": "Rishikesh, Uttarakhand",
+    "distance": 260,
+    "price": 2500,
+    "desc": "Rishikesh nestled in the serene Himalayan foothills along the Ganges River. This spiritual hub beckons seekers with its tranquil ambiance and serves as a gateway to the Garhwal Himalayas, while also enticing adventure enthusiasts with thrilling activities like white-water rafting.",
+    "reviews": [],
+
+    "photo": "/tour-images/tour-img06.jpg",
+    "featured": true
+  },
+  {
+    "title": "Pashupatinath",
+    "city": "Kathmandu",
+    "address": "Kathmandu, Nepal",
+    "distance": 1210,
+    "price": 10000,
+    "desc": "Pashupatinath Temple is one of the most sacred Hindu temples dedicated to Lord Shiva, attracting pilgrims and visitors with its ancient architecture and spiritual ambiance along the banks of the Bagmati River.",
+    "reviews": [],
+
+    "photo": "/tour-images/gallery-10.jpg",
+    "featured": false
+  }
+]
