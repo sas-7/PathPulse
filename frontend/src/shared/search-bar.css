@@ -55,7 +55,7 @@
 
 @media only screen and (max-width:576px) {
    .search__bar form .form__group {
-      width: 100%;
+      width: 70%;
    }
 
    .form__group input {
