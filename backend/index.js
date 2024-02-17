@@ -54,9 +54,6 @@ app.use(cors(corsOptions));
 // Middleware to parse cookies in the incoming requests
 app.use(cookieParser());
 
-// render
-app.use('/', express.static('/build'))
-
 // Configure Nodemailer transporter
 const transporter = nodemailer.createTransport({
    service: 'Gmail',
