@@ -22,8 +22,7 @@ const port = process.env.PORT || 8000;
 // CORS options to allow requests from any origin and include credentials
 const corsOptions = {
    origin: true,
-   credentials: true,
-   methods: ['GET', 'POST', 'PUT', 'DELETE']
+   credentials: true
 };
 
 // Disable strict mode for MongoDB queries
@@ -50,11 +49,7 @@ const connect = async () => {
 app.use(express.json());
 
 // Middleware to enable CORS with the specified options
-// app.use(cors(corsOptions));
-
-//For Vercel
-app.use(cors(corsConfig))
-app.options("", cors(corsConfig))
+app.use(cors(corsOptions));
 
 // Middleware to parse cookies in the incoming requests
 app.use(cookieParser());
