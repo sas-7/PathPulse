@@ -50,19 +50,19 @@
 /* =============== RESPONSIVE ================ */
 @media only screen and (max-width: 992px) {
   .footer .logo img {
-    width: 20%;
+    width: 40%;
   }
 
   .footer .logo p {
-    font-size: 0.6rem; /* Decrease font size */
+    font-size: 0.6rem; 
   }
 
   .footer .social__link span a {
-    font-size: 0.8rem; /* Decrease font size */
+    font-size: 0.8rem; 
   }
 
   .footer__link-title {
-    font-size: 0.8rem; /* Decrease font size */
+    font-size: 0.8rem; 
   }
 
   .footer__quick-links {
@@ -76,46 +76,46 @@
   }
 
   .footer__quick-links li a {
-    font-size: 0.8rem; /* Decrease font size */
+    font-size: 0.8rem; 
   }
 
   .footer__quick-links h6 {
-    font-size: 0.8rem; /* Decrease font size */
+    font-size: 0.8rem; 
   }
 
   .footer__quick-links p {
-    font-size: 0.8rem; /* Decrease font size */
+    font-size: 0.8rem; 
   }
 
   .footer__quick-links h6 span i {
-    font-size: 1rem; /* Decrease font size */
+    font-size: 1rem; 
   }
 }
 
 /* =============== RESPONSIVE ================ */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 576px) {
   .footer .logo img {
     width: 45%;
   }
 
   .footer__quick-links li {
     flex-basis: 100%;
-    margin-bottom: 0.5rem; /* Decrease margin bottom */
+    margin-bottom: 0.5rem; 
   }
 
   .footer__quick-links li a {
-    font-size: 0.7rem; /* Decrease font size */
+    font-size: 0.7rem; 
   }
 
   .footer__quick-links h6 {
-    font-size: 0.7rem; /* Decrease font size */
+    font-size: 0.7rem; 
   }
 
   .footer__quick-links p {
-    font-size: 0.7rem; /* Decrease font size */
+    font-size: 0.7rem; 
   }
 
   .footer__quick-links h6 span i {
-    font-size: 0.9rem; /* Decrease font size */
+    font-size: 0.9rem; 
   }
 }
