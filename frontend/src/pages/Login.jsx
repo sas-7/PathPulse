@@ -36,11 +36,13 @@ const Login = () => {
       });
 
       const result = await res.json();
-      if (!res.ok) alert(result.message);
-      console.log(result.data);
-
-      dispatch({ type: "LOGIN_SUCCESS", payload: result.data });
-      navigate("/");
+      if (!res.ok) {
+        alert(result.message);
+      } else {
+        console.log(result.data);
+        dispatch({ type: "LOGIN_SUCCESS", payload: result.data });
+        navigate("/");
+      }
     } catch (err) {
       dispatch({ type: "LOGIN_FAILURE", payload: err.message });
     }

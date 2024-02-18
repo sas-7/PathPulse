@@ -26,7 +26,7 @@ const sendPasswordResetEmail = async (email, token) => {
       to: email,
       subject: 'Password Reset',
       html: `
-            <p>You have requested a password reset. Please click the link below to reset your password:</p>
+            <p>You have requested a password reset. This link is valid for 5 minutes only. Please click the link below to reset your password:</p>
             <a href="http://localhost:3000/reset/${token}">Reset Password</a>
         `
    };
@@ -111,7 +111,7 @@ export const requestPasswordReset = async (req, res) => {
       // Generate and save reset token
       const resetToken = generateToken();
       user.resetToken = resetToken;
-      user.resetTokenExpiration = Date.now() + 3600000; // Token expiration time: 1 hour
+      user.resetTokenExpiration = Date.now() + 300000; // Token expiration time: 5 minutes
       await user.save();
 
       // Send password reset email

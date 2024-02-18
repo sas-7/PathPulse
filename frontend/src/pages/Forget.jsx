@@ -32,7 +32,7 @@ const Forget = () => {
       if (!res.ok) alert(result.message);
 
       dispatch({ type: "LOGIN_SUCCESS", payload: result.data });
-      navigate("/reset-password-message");
+      navigate("/login");
     } catch (err) {
       dispatch({ type: "LOGIN_FAILURE", payload: err.message });
     }
