@@ -34,7 +34,7 @@ const Reset = () => {
       if (!res.ok) alert(result.message);
 
       dispatch({ type: "RESET_PASSWORD_SUCCESS", payload: result.data });
-      navigate("/reset-password-message");
+      navigate("/login");
     } catch (err) {
       dispatch({ type: "RESET_PASSWORD_FAILURE", payload: err.message });
     }
