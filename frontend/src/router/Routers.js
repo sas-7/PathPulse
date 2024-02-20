@@ -11,6 +11,7 @@ import TourDetails from './../pages/TourDetails';
 import Tours from './../pages/Tours';
 import Gallery from '../pages/Gallery';
 import About from '../pages/About';
+import Location from '../pages/Location';
 
 const Routers = () => {
    return (
@@ -26,6 +27,7 @@ const Routers = () => {
          <Route path='/forget' element={<Forget />} />
          <Route path='/reset/:token' element={<Reset />} />
          <Route path='/thank-you' element={<ThankYou />} />
+         <Route path='/location/:longi/:lati/:title' element={<Location />} />
          <Route path='/tours/search' element={<SearchResultList />} />
       </Routes>
    );

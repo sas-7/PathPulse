@@ -15,6 +15,14 @@ const tourSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    longi: {
+      type: String,
+      required: true,
+    },
+    lati: {
+      type: String,
+      required: true,
+    },
     distance: {
       type: Number,
       required: true,
@@ -37,7 +45,6 @@ const tourSchema = new mongoose.Schema(
         ref: "Review",
       },
     ],
-
     featured: {
       type: Boolean,
       default: false,

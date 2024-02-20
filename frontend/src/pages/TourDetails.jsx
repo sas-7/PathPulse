@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect, useContext } from "react";
 import "../styles/tour-details.css";
 import { Container, Row, Col, Form, ListGroup } from "reactstrap";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import calculateAvgRating from "../utils/avgRating";
 import avatar from "../assets/images/avatar.jpg";
 import Booking from "../components/Booking/Booking";
@@ -11,6 +11,7 @@ import { AuthContext } from "../context/AuthContext";
 
 const TourDetails = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const reviewMsgRef = useRef("");
   const [tourRating, setTourRating] = useState(null);
   const { user } = useContext(AuthContext);
@@ -18,7 +19,18 @@ const TourDetails = () => {
   // fetch data from database
   const { data: tour, loading, error } = useFetch(`${BASE_URL}/tours/${id}`);
 
-  const { photo, title, desc, price, reviews, city, address, distance } = tour;
+  const {
+    photo,
+    title,
+    desc,
+    price,
+    reviews,
+    city,
+    address,
+    distance,
+    longi,
+    lati,
+  } = tour;
 
   const { totalRating, avgRating } = calculateAvgRating(reviews);
 
@@ -61,6 +73,11 @@ const TourDetails = () => {
     window.scrollTo(0, 0);
   }, [tour]);
 
+  const handleRouteClick = () => {
+    // Navigate to the route page and pass longi and lati as URL parameters
+    navigate(`/location/${longi}/${lati}/${title}`);
+  };
+
   return (
     <section>
       <Container>
@@ -90,6 +107,20 @@ const TourDetails = () => {
 
                     <span>
                       <i class="ri-map-pin-fill"></i> {address}
+                    </span>
+
+                    <span>
+                      <button
+                        onClick={handleRouteClick}
+                        style={{
+                          background: "transparent",
+                          border: "none",
+                          color: "blue",
+                          cursor: "pointer",
+                        }}
+                      >
+                        Route to {title}
+                      </button>
                     </span>
                   </div>
 
