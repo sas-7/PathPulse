@@ -12,22 +12,22 @@ const generateToken = () => {
 const sendPasswordResetEmail = async (email, token) => {
    // Create Nodemailer transporter
    const transporter = nodemailer.createTransport({
-      service: 'Gmail',
+      service: process.env.EMAIL_SERVICE,
       auth: {
-         user: process.env.EMAIL, // Update with your email address from .env
-         pass: process.env.PASSWORD // Update with your email password from .env
+         user: process.env.EMAIL,
+         pass: process.env.PASSWORD
       },
       authMethod: 'LOGIN'
    });
 
    // Email content
    const mailOptions = {
-      from: process.env.EMAIL, // Update with your email address from .env
+      from: process.env.EMAIL,
       to: email,
       subject: 'Password Reset',
       html: `
             <p>You have requested a password reset. This link is valid for 5 minutes only. Please click the link below to reset your password:</p>
-            <a href="http://localhost:3000/reset/${token}">Reset Password</a>
+            <a href="https://pathpulse.vercel.app/reset/${token}">Reset Password</a>
         `
    };
 

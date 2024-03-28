@@ -29,6 +29,7 @@ const Routers = () => {
          <Route path='/thank-you' element={<ThankYou />} />
          <Route path='/location/:longi/:lati/:title' element={<Location />} />
          <Route path='/tours/search' element={<SearchResultList />} />
+         <Route path='*' element={<Navigate to='/home' />} />
       </Routes>
    );
 };

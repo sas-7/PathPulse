@@ -8,7 +8,6 @@ import tourRoute from './routes/tours.js';
 import userRoute from './routes/users.js';
 import reviewRoute from './routes/reviews.js';
 import bookingRoute from './routes/bookings.js';
-import nodemailer from 'nodemailer'; // Importing nodemailer for sending emails
 
 // Load environment variables from the .env file
 dotenv.config();
@@ -53,16 +52,6 @@ app.use(cors(corsOptions));
 
 // Middleware to parse cookies in the incoming requests
 app.use(cookieParser());
-
-// Configure Nodemailer transporter
-const transporter = nodemailer.createTransport({
-   service: 'Gmail',
-   auth: {
-      user: process.env.EMAIL, // Update with your email address
-      pass: process.env.PASSWORD // Update with your email password
-   },
-   authMethod: 'LOGIN'
-});
 
 // Define routes for different API endpoints
 app.use("/api/v1/auth", authRoute);
