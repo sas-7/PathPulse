@@ -25,8 +25,8 @@ const Home = () => {
                   <img src={worldImg} alt="" />
                 </div>
                 <h1>
-                  Traveling opens the door to creating{" "}
-                  <span className="hightlight"> memories</span>
+                  Traveling unlocks the gateway to crafting unforgettable{" "}
+                  <span className="hightlight"> memories.</span>
                 </h1>
                 <p>
                   Traveling is the art of discovering the world beyond familiar
